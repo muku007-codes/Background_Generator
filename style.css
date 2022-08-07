@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav {
+  font-size: larger;
+  background-color: white;
+  height: 4rem;
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#search input {
+  height: 2rem;
+  width: 18rem;
+  border: 1px dotted black;
+  outline: none;
+  border-radius: 1rem;
+  padding-left: 1rem;
+}
+
+#btn2 {
+  height: 2rem;
+  width: 2rem;
+  background: transparent;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.back {
+  height: 80vh;
+  width: 100vw;
+  display: grid;
+  place-items: center;
+}
+
+.back div {
+  font-size: 2rem;
+  background-color: lightblue;
+}
+
+.back button {
+  height: 3rem;
+  width: 9rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px;
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  font-size: larger;
+  transition: 0.8s;
+}
+
+#logo {
+  font-weight: bolder;
+  font-size: larger;
+}
+
+.back button:hover {
+  color: white;
+  background-color: black;
+}
+
+@media only screen and (max-width: 580px) {
+  #search input {
+    width: 7rem;
+  }
+  nav {
+    font-size: small;
+  }
+  .back div {
+    font-size: small;
+  }
+}
